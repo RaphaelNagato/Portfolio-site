@@ -1,0 +1,149 @@
+.container {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Header */
+
+.header {
+    text-transform: uppercase;
+    color: #2d3649;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    margin-bottom: 2em;
+}
+
+.image>img {
+    width: 100px;
+}
+
+.title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: right;
+    margin-left: auto;
+}
+
+.title>p {
+    text-align: right;
+    flex-basis: 100%;
+    margin-bottom: 0;
+}
+
+.title>p:first-child {
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.title>p:last-child {
+    font-weight: bolder;
+}
+
+/* Showcase */
+
+.showcase {
+    padding-top: 4em;
+    flex-basis: 100%;
+    border: 5px solid #02b3e4;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/showcase.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 300px;
+}
+
+/* Featured */
+
+.featured {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    text-align: center;
+    color: #7d97ad;
+}
+
+.featured>p:first-child {
+    flex-basis: 100%;
+    text-align: left;
+    margin: 0;
+    font-weight: bolder;
+    font-size: 25px;
+    padding-top: 25px;
+}
+
+.box {
+    margin-top: 20px;
+    flex: 1 1 250px;
+    margin: 0;
+    padding-top: 25px;
+}
+
+.box>img {
+    width: 40%;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #02b3e4;
+    color: white;
+    flex-basis: 100%;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 580px) {
+    .image>img {
+        width: 80px;
+    }
+    .image {
+        flex-basis: 100%;
+    }
+    .title {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: auto;
+    }
+    .title>p {
+        text-align: center;
+        flex-basis: 100%;
+    }
+    .showcase>h3 {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .showcase {
+        height: 400px;
+        padding-top: 5em;
+    }
+    .showcase>h3 {
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 40px;
+    }
+    .showcase>p {
+        font-size: 21px;
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%
+    }
+    .showcase {
+        height: 450px;
+    }
+}
